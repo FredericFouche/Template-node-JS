@@ -35,9 +35,23 @@ npm install
 npm run dev
 ```
 
+5. Lancez le serveur de production :
+
+```bash
+npm start
+```
+
+6. Accédez au serveur de développement dans votre navigateur :
+
+```bash
+http://localhost:3000
+```
+
 Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet.
 
 ## Structure du projet
+
+Ce template respecte l'architecture MVC (Modèle-Vue-Contrôleur), voici sa structure :
 
 ```
 template-node-js
@@ -73,3 +87,11 @@ template-node-js
 
 - [Express](https://expressjs.com/) : framework web minimaliste pour Node.js.
 - [EJS](https://ejs.co/) : moteur de template pour Node.js.
+
+## Dépendances de développement
+
+- Aucune pour l'instant
+
+## Auteurs
+
+- Frédéric Fouché.
