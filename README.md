@@ -13,6 +13,13 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 1. Clonez ce dépôt sur votre machine locale :
 
-   ```bash
-   git clone https://github.com/votreutilisateur/template-node-js.git
-  ```
+```bash
+git clone https://github.com/votreutilisateur/template-node-js.git
+```
+2. Accédez au répertoire du projet en exécutant la commande suivante :
+```bash
+cd template-node-js
+```
+3.Installez les dépendances du projet
+
+
