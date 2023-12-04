@@ -16,10 +16,60 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 ```bash
 git clone https://github.com/votreutilisateur/template-node-js.git
 ```
+
 2. Accédez au répertoire du projet en exécutant la commande suivante :
+
 ```bash
 cd template-node-js
 ```
-3.Installez les dépendances du projet
 
+3. Installez les dépendances du projet
 
+   ```bash
+   npm install
+   ```
+
+4. Lancez le serveur de développement :
+
+   ```bash
+   npm run dev
+   ```
+
+   Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet.
+
+## Structure du projet
+
+```
+template-node-js
+├── app.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── public
+│   ├── css
+│   │   └── style.css
+│   ├── img
+│   └── js
+│       └── script.js
+├── router
+│   └── router.js
+├── models
+│   └── model.js
+└── views
+    ├── 404.ejs
+    ├── index.ejs
+    └── layout.ejs
+```
+
+- `app.js` : fichier principal du projet, il contient la configuration du serveur.
+- `package.json` : fichier de configuration du projet, il contient la liste des dépendances et des scripts.
+- `package-lock.json` : fichier généré automatiquement par npm pour gérer les dépendances.
+- `public` : dossier contenant les fichiers statiques (css, images, javascript).
+- `router` : dossier contenant les fichiers de routage.
+- `models` : dossier contenant les fichiers de modèles.
+- `views` : dossier contenant les fichiers de vues.
+
+## Dépendances
+
+- [Express](https://expressjs.com/) : framework web minimaliste pour Node.js.
+- [EJS](https://ejs.co/) : moteur de template pour Node.js.
