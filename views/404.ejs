@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  </head>
+
+  <body>
+    <main class="main">
+      <header>
+        <h1 class="main__title"><%= title %></h1>
+        <p>
+          <%= message %>
+          <a href="<%= linkGithub %>" class="footer__link">Lien Github</a>
+          <a href="#" onclick="javascript:history.back();" class="footer__link"
+            >Revenir en arrière</a
+          >
+        </p>
+      </header>
+    </main>
+  </body>
+</html>

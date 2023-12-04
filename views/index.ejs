@@ -1,21 +1,27 @@
 <!-- Page d'accueil template ejs avec partials -->
 <%- include('partials/header') %>
-    <main class="main">
-        <header>
-            <h1 class="main__title">
-                <%= title %>
-            </h1>
-            <p>
-                Bienvenue sur le template de base Node.js. Les dépendances suivantes sont intégrées :
-                <ul class="main__ul">
-                    <% for (const dependance of dependances) { %>
-                        <li class="main__ul__li">
-                            <%= dependance %>
-                        </li>
-                        <% } %>
-                </ul>
+    <html lang="fr">
 
-            </p>
-        </header>
-    </main>
+    <body>
+        <main class="main">
+            <header>
+                <h1 class="main__title">
+                    <%= title %>
+                </h1>
+                <p>
+                    Bienvenue sur le template de base Node.js. Les dépendances suivantes sont intégrées :
+                    <ul class="main__ul">
+                        <% for (const dependance of dependances) { %>
+                            <li class="main__ul__li">
+                                <%= dependance %>
+                            </li>
+                            <% } %>
+                    </ul>
+
+                </p>
+            </header>
+        </main>
+    </body>
+
+    </html>
     <%- include('partials/footer') %>
