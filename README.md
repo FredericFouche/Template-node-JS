@@ -35,7 +35,7 @@ cd template-node-js
    npm run dev
    ```
 
-   Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet.
+Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet.
 
 ## Structure du projet
 
