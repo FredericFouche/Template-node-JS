@@ -25,15 +25,15 @@ cd template-node-js
 
 3. Installez les dépendances du projet
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 4. Lancez le serveur de développement :
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
 Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet.
 
