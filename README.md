@@ -65,14 +65,17 @@ template-node-js
 │   ├── img
 │   └── js
 │       └── script.js
-├── router
-│   └── router.js
-├── models
-│   └── model.js
-└── views
-    ├── 404.ejs
-    ├── index.ejs
-    └── layout.ejs
+├── app
+│   ├── router.js
+│   ├── utils.js
+│   ├── controller
+│   │   └── controller.js
+│   ├── models
+│   │   └── model.js
+│   └── views
+│       ├── 404.ejs
+│       ├── index.ejs
+│       └── layout.ejs
 ```
 
 - `app.js` : fichier principal du projet, il contient la configuration du serveur.

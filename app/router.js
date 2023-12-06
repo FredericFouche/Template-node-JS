@@ -1,9 +1,9 @@
 //configuration fichier router
-// Import du Router Express
+//Import du Router Express
 const express = require("express");
 const controller = require("../app/controller/controller");
 
-// Initialisation du router
+//Initialisation du router
 const router = express.Router();
 //importation des controllers
 router.get("/", controller.homePage);
