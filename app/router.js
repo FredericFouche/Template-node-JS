@@ -1,7 +1,7 @@
 //configuration fichier router
 // Import du Router Express
 const express = require("express");
-const controller = require("../app/controller");
+const controller = require("../app/controller/controller");
 
 // Initialisation du router
 const router = express.Router();
