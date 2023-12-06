@@ -14,6 +14,19 @@
   margin: 0 10%;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--quinary-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: var(--secondary-color);
+  transition: 0.2s;
+}
+
 .footer {
   display: flex;
   margin: auto;
@@ -58,7 +71,7 @@
   margin-bottom: 1rem;
 }
 
-header > p {
+.para {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -70,9 +83,10 @@ header > p {
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin: 1rem 2.5rem;
+  text-transform: uppercase;
 }
 
 .main__li {
