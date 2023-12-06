@@ -75,6 +75,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .main__ul {
@@ -91,4 +92,8 @@
 
 .main__li {
   margin-bottom: 0.5rem;
+}
+
+.para-padding {
+  margin-right: 30%;
 }
