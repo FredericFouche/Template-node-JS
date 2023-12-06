@@ -3,6 +3,7 @@
 //importation des modules
 const express = require("express");
 const path = require("path");
+const utilsModule = require("./app/utils");
 
 //importation du router
 const router = require("./app/router");
@@ -17,6 +18,8 @@ app.set("views", path.join(__dirname, "/app/views"));
 //configuration du dossier static
 app.use(express.static("public"));
 
+// 2 Enregistrement des locals - pour fournir des données communes à chaque vue
+app.use(utilsModule.setLocals);
 //configuration du server
 app.use(router);
 
@@ -25,7 +28,7 @@ const PORT = 3000;
 
 //lancement du server
 app.listen(PORT, () => {
-    console.log(
-        `Serveur lancé sur le port : ${PORT}, il est disponible à l'adresse : http://localhost:${PORT}`
-    );
+  console.log(
+    `Serveur lancé sur le port : ${PORT}, il est disponible à l'adresse : http://localhost:${PORT}`
+  );
 });
