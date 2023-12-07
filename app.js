@@ -18,7 +18,7 @@ app.set("views", path.join(__dirname, "/app/views"));
 //configuration du dossier static
 app.use(express.static("public"));
 
-// 2 Enregistrement des locals - pour fournir des données communes à chaque vue
+//Enregistrement des locals - pour fournir des données communes à chaque vue
 app.use(utilsModule.setLocals);
 //configuration du server
 app.use(router);
