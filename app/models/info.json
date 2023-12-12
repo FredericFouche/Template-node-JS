@@ -1,10 +1,10 @@
 {
-    "title": "Template Node de base",
-    "message": "Bienvenue sur le template nodeJS préconfiguré de Fred",
-    "dependances": ["express", "ejs", "morgan", "dotenv", "sqlite3"],
-    "auteur": "Fred",
-    "linkContact": "#",
-    "linkGithub": "https://github.com/FredericFouche/Template-node-JS",
-    "title404": "404",
-    "message404": "Page non trouvée"
+  "title": "Template Node de base",
+  "message": "Bienvenue sur le template nodeJS préconfiguré de Fred",
+  "dependances": ["express", "ejs", "morgan", "dotenv", "sqlite3", "jest"],
+  "auteur": "Fred",
+  "linkContact": "#",
+  "linkGithub": "https://github.com/FredericFouche/Template-node-JS",
+  "title404": "404",
+  "message404": "Page non trouvée"
 }
