@@ -47,6 +47,12 @@ npm start
 http://localhost:3000
 ```
 
+7. Lancez les tests avec jest et supertest:
+
+```bash
+npm test
+```
+
 Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js` ou le fichier `.env`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet. Le serveur comprends une base de donnée SQLite qui est créée automatiquement au lancement du serveur, elle est initialisée avec quelques valeurs sans intérêt mais qui permettent de visualiser la structure.
 
 ## Structure du projet
@@ -79,6 +85,8 @@ template-node-js
 │       ├── 404.ejs
 │       ├── index.ejs
 │       └── layout.ejs
+└── __tests__
+    └── app.test.js
 ```
 
 - `app.js` : fichier principal du projet, il contient la configuration du serveur.
@@ -88,6 +96,9 @@ template-node-js
 - `router` : dossier contenant les fichiers de routage.
 - `models` : dossier contenant les fichiers de modèles.
 - `views` : dossier contenant les fichiers de vues.
+- `middleware` : dossier contenant les fichiers de middleware.
+- `controller` : dossier contenant les fichiers de contrôleurs.
+- `__tests__` : dossier contenant les fichiers de tests.
 
 ## Dépendances
 
@@ -99,7 +110,8 @@ template-node-js
 
 ## Dépendances de développement
 
-- Aucune pour l'instant
+- [jest](https://jestjs.io/) : framework de test pour Node.js.
+- [supertest](https://www.npmjs.com/package/supertest) : module qui permet de tester les requêtes HTTP.
 
 ## Auteurs
 
