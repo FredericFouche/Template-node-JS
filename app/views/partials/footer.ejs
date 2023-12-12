@@ -1,12 +1,16 @@
 <!-- footer ejs -->
 <html lang="fr">
-  <body>
+
+<body>
     <footer class="footer">
-      <div>
-        <a href="<%= linkContact %>" class="footer__link">Contact</a>
-        <a href="<%= linkGithub %>" class="footer__link">Github</a>
-      </div>
-      <p class="footer__text"><%= auteur %>, <%= date %>.</p>
+        <div>
+            <a href="<%= info.linkContact %>" class="footer__link">Contact</a>
+            <a href="<%= info.linkGithub %>" class="footer__link">Github</a>
+        </div>
+        <p class="footer__text">
+            <%= info.auteur %>,
+                <%= info.date %>.</p>
     </footer>
-  </body>
+</body>
+
 </html>

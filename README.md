@@ -72,6 +72,7 @@ template-node-js
 │   │   └── controller.js
 │   ├── models
 │   │   └── model.js
+│   │   └── info.json
 │   └── views
 │       ├── 404.ejs
 │       ├── index.ejs
@@ -90,6 +91,8 @@ template-node-js
 
 - [Express](https://expressjs.com/) : framework web minimaliste pour Node.js.
 - [EJS](https://ejs.co/) : moteur de template pour Node.js.
+- [dotenv](https://www.npmjs.com/package/dotenv) : module qui charge les variables d'environnement à partir d'un fichier `.env`.
+- [morgan](https://www.npmjs.com/package/morgan) : module qui permet de logger les requêtes HTTP.
 
 ## Dépendances de développement
 
