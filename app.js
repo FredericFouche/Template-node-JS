@@ -5,6 +5,10 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const utilsModule = require('./app/utils');
+const sqlite = require('sqlite3');
+
+// import db depuis /app/models/models.js
+const db = require('./app/models/models');
 
 //morgan pour les logs
 const morgan = require('morgan');
