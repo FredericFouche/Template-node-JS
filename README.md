@@ -47,7 +47,7 @@ npm start
 http://localhost:3000
 ```
 
-Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet.
+Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js` ou le fichier `.env`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet. Le serveur comprends une base de donnée SQLite qui est créée automatiquement au lancement du serveur, elle est initialisée avec quelques valeurs sans intérêt mais qui permettent de visualiser la structure.
 
 ## Structure du projet
 
@@ -93,6 +93,7 @@ template-node-js
 - [EJS](https://ejs.co/) : moteur de template pour Node.js.
 - [dotenv](https://www.npmjs.com/package/dotenv) : module qui charge les variables d'environnement à partir d'un fichier `.env`.
 - [morgan](https://www.npmjs.com/package/morgan) : module qui permet de logger les requêtes HTTP.
+- [sqlite3](https://www.npmjs.com/package/sqlite3) : module qui permet de manipuler une base de données SQLite.
 
 ## Dépendances de développement
 

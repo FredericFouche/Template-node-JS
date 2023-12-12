@@ -1,7 +1,7 @@
 {
     "title": "Template Node de base",
     "message": "Bienvenue sur le template nodeJS préconfiguré de Fred",
-    "dependances": ["express", "ejs", "morgan", "dotenv"],
+    "dependances": ["express", "ejs", "morgan", "dotenv", "sqlite3"],
     "auteur": "Fred",
     "linkContact": "#",
     "linkGithub": "https://github.com/FredericFouche/Template-node-JS",
