@@ -12,13 +12,6 @@ const controller = {
     favicon: (req, res) => {
         res.status(204).end();
     },
-    erreur404: (req, res) => {
-        res.status(404).render('404', {
-                info: info,
-                date: new Date().getFullYear(),
-            }),
-            console.log('Erreur 404');
-    },
 };
 
 //exportation du controller

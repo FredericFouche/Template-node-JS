@@ -68,6 +68,8 @@ template-node-js
 ├── app
 │   ├── router.js
 │   ├── utils.js
+│   ├── middleware
+│   │   └── 404.js
 │   ├── controller
 │   │   └── controller.js
 │   ├── models

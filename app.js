@@ -5,7 +5,8 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const utilsModule = require('./app/utils');
-const sqlite = require('sqlite3');
+//import 404
+const controller404 = require('./app/middleware/404');
 
 // import db depuis /app/models/models.js
 const db = require('./app/models/models');
@@ -36,6 +37,9 @@ app.use(express.static('public'));
 app.use(utilsModule.setLocals);
 //configuration du server
 app.use(router);
+
+//configuration de la 404
+app.use(controller404.notFoundMiddleware);
 
 //définition du port
 const PORT = process.env.PORT || 3000;
