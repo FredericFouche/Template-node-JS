@@ -1,5 +1,9 @@
 # Ceci est un fichier bash qui permet d'automatiser l'initialisation de l'environnement de travail et de ses outils
-# Auteur: Frédéric Fouché
+
+# Animation de début
+echo "Bienvenue dans le script d'initialisation de l'environnement de travail node.js/express"
+echo "Initialisation en cours..."
+
 # Initialisation du projet npm
 npm init -y
 # installation des dépendances avec npm install
