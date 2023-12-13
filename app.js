@@ -10,6 +10,7 @@ const controller404 = require('./app/middleware/404');
 
 // import db depuis /app/models/models.js
 const db = require('./app/models/models');
+db.initDb();
 
 //morgan pour les logs
 const morgan = require('morgan');
@@ -27,8 +28,9 @@ app.set('views', path.join(__dirname, '/app/views'));
 //configuration de morgan
 const morganMode = process.env.MORGAN_MODE;
 if (morganMode === 'dev') {
-    app.use(morgan('dev'));
-} else {}
+  app.use(morgan('dev'));
+} else {
+}
 
 //configuration du dossier static
 app.use(express.static('public'));
@@ -46,7 +48,7 @@ const PORT = process.env.PORT || 3000;
 
 //lancement du server
 app.listen(PORT, () => {
-    console.log(
-        `Serveur lancé sur le port : ${PORT}, il est disponible à l'adresse : http://localhost:${PORT}`
-    );
+  console.log(
+    `Serveur lancé sur le port : ${PORT}, il est disponible à l'adresse : http://localhost:${PORT}`
+  );
 });

@@ -1,7 +1,7 @@
 {
   "name": "js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ce dépôt est un modèle de projet Node.js de base pour vous aider à démarrer rapidement vos projets. Il inclut une structure de base, des dépendances courantes et des fichiers de configuration.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
