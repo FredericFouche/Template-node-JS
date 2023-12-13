@@ -9,7 +9,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 - Node.js : [Télécharger Node.js](https://nodejs.org/)
 - npm (gestionnaire de paquets Node.js) : npm est généralement installé avec Node.js.
 
-## Configuration
+## Configuration sans utiliser le fichier .sh
 
 1. Clonez ce dépôt sur votre machine locale :
 
@@ -51,6 +51,44 @@ http://localhost:3000
 
 ```bash
 npm test
+```
+
+## Configuration en utilisant le fichier .sh
+
+1. Clonez ce dépôt sur votre machine locale :
+
+```bash
+git clone https://github.com/FredericFouche/Template-node-JS.git
+```
+
+2. Accédez au répertoire du projet en exécutant la commande suivante :
+
+```bash
+cd template-node-js
+```
+
+3. Exécutez le fichier `launch.sh` :
+
+```bash
+./launch.sh
+```
+
+Il est possible que votre ordinateur vous demande l'autorisation d'exécuter le fichier, dans ce cas, acceptez. Il peut y avoir un soucis de droit d'exécution sur le fichier.
+
+4. Configuration launch.sh :
+
+Le fichier bash va vous poser quelques questions pour configurer le projet, ces questions concernent git/github, npm et le lancement du serveur.
+
+- git/github : le fichier bash va vous demander si vous souhaitez initialiser un dépôt git et le lier à un dépôt github. Si vous répondez oui, il vous demandera l'url du dépôt github. Si vous répondez non, il ne fera rien.
+
+- npm : le fichier bash va installer les dépendances du projet et initialiser npm dans votre dépôt local.
+
+- lancement serveur : le fichier bash va vous demander si vous souhaitez lancer le serveur de développement. Si vous répondez oui, il va lancer le serveur de développement. Si vous répondez non, il ne fera rien.
+
+5. Accédez au serveur de développement dans votre navigateur :
+
+```bash
+http://localhost:3000
 ```
 
 Le serveur de développement est accessible à l'adresse suivante : http://localhost:3000, mais vous pouvez modifier le port dans le fichier `app.js` ou le fichier `.env`. Le serveur de développement est configuré pour se recharger automatiquement à chaque modification des fichiers du projet. Le serveur comprends une base de donnée SQLite qui est créée automatiquement au lancement du serveur, elle est initialisée avec quelques valeurs sans intérêt mais qui permettent de visualiser la structure.
