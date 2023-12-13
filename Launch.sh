@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$(id -u)" != "0" ]; then
+    echo "Ce script doit être exécuté avec des droits d'administration."
+    echo "Veuillez exécuter ce script avec 'sudo' ou en tant que root."
+    exit 1
+fi
+
 # Fonction pour demander à l'utilisateur de saisir une valeur avec une option par défaut
 ask_with_default() {
     prompt="$1 [$2]: "
@@ -59,23 +65,6 @@ if [ "$init_git" = "y" ]; then
     fi
 fi
 
-# Proposer à l'utilisateur de créer le fichier .env et modifier la valeur de PORT
-env_response=$(ask_with_default "Voulez-vous créer le fichier .env et modifier la valeur de PORT=valeur ? (y/n)" "n")
-
-if [ "$env_response" = "y" ]; then
-    # Créer le fichier .env s'il n'existe pas
-    if [ ! -f .env ]; then
-        touch .env
-    fi
-
-    # Modifier la valeur de PORT dans le fichier .env
-    port_value=$(ask_with_default "Entrez la nouvelle valeur pour PORT")
-    echo "PORT=$port_value" > .env
-
-    echo "Le fichier .env a été créé avec la valeur de PORT modifiée."
-else
-    echo "Aucune modification n'a été effectuée."
-fi
 
 # Proposer à l'utilisateur de lancer le serveur
 launch=$(ask_with_default "Voulez-vous lancer le serveur ? (y/n)" "y")
