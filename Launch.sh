@@ -65,6 +65,18 @@ if [ "$init_git" = "y" ]; then
     fi
 fi
 
+# Demander à l'utilisateur s'il souhaite créer une configuration ESLint
+init_eslint=$(ask_with_default "Voulez-vous créer une configuration ESLint ? (y/n)" "y")
+
+if [ "$init_eslint" = "y" ]; then
+    # Créer une configuration ESLint
+    npx eslint --init
+fi
+
+# Mettre à jour les dépendances du projet
+echo "Mise à jour des dépendances du projet..."
+npm update
+echo "Mise à jour terminée !"
 
 # Proposer à l'utilisateur de lancer le serveur
 launch=$(ask_with_default "Voulez-vous lancer le serveur ? (y/n)" "y")
@@ -77,7 +89,7 @@ fi
 echo "Initialisation terminée !"
 echo "Merci d'avoir utilisé ce script !"
 echo "A bientôt !"
-echo "par Frédéric Fouché"
+echo "Frédéric Fouché"
 
 # Fin du script
 exit 0
