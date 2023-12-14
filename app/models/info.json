@@ -1,18 +1,19 @@
 {
-  "title": "Template Node de base",
-  "message": "Bienvenue sur le template nodeJS préconfiguré de Fred",
-  "dependances": [
-    "<a href='https://expressjs.com/fr/'>express</a>",
-    "<a href='https://ejs.co/'>ejs</a>",
-    "<a href='https://www.npmjs.com/package/morgan'>morgan</a>",
-    "<a href='https://www.npmjs.com/package/dotenv'>dotenv</a>",
-    "<a href='https://www.npmjs.com/package/sqlite3'>sqlite3</a>",
-    "<a href='https://jestjs.io/'>jest</a>",
-    "<a href='https://www.npmjs.com/package/supertest'>supertest</a>"
-  ],
-  "auteur": "Fred",
-  "linkContact": "#",
-  "linkGithub": "https://github.com/FredericFouche/Template-node-JS",
-  "title404": "404",
-  "message404": "Page non trouvée"
+    "title": "Template Node de base",
+    "message": "Bienvenue sur le template nodeJS préconfiguré de Fred",
+    "dependances": [
+        "<a href='https://expressjs.com/fr/'>express</a>",
+        "<a href='https://ejs.co/'>ejs</a>",
+        "<a href='https://www.npmjs.com/package/morgan'>morgan</a>",
+        "<a href='https://www.npmjs.com/package/dotenv'>dotenv</a>",
+        "<a href='https://www.npmjs.com/package/sqlite3'>sqlite3</a>",
+        "<a href='https://jestjs.io/'>jest</a>",
+        "<a href='https://www.npmjs.com/package/supertest'>supertest</a>",
+        "<a href='https://eslint.org/'>ESlint</a>"
+    ],
+    "auteur": "Fred",
+    "linkContact": "#",
+    "linkGithub": "https://github.com/FredericFouche/Template-node-JS",
+    "title404": "404",
+    "message404": "Page non trouvée"
 }
