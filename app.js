@@ -8,6 +8,9 @@ const express = require('express');
 // importation de express-session
 const session = require('express-session');
 
+// importation de fs
+const fs = require('fs');
+
 // importation de path
 const path = require('path');
 
@@ -58,6 +61,12 @@ app.use(
 app.use(utilsModule.setLocals);
 // configuration du server
 app.use(router);
+
+// middleware sitemap
+app.get('/sitemap.xml', (req, res) => {
+  res.header('Content-Type', 'application/xml');
+  res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
 
 // configuration de la 404
 app.use(controller404.notFoundMiddleware);

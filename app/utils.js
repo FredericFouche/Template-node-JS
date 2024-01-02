@@ -1,4 +1,4 @@
-//fichier qui contient les fonctions utilitaires
+// fichier qui contient les fonctions utilitaires
 const utilsModule = {
   setLocals(req, res, next) {
     res.locals = {
